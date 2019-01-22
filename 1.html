@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="use-class">Use Class Example
+        <div class="one">some Contents</div>
+        <div class="one">some Contents</div>
+        <div class="one">some Contents</div>
+        <div class="one">some Contents</div>
+        <div class="one">some Contents</div>
+    </div>
+        =========================<br>
+    <div id="use-id">Use Id Example
+            <div id="one">some Contents</div>
+            <div id="one">some Contents</div>
+            <div id="one">some Contents</div>
+            <div id="one">some Contents</div>
+            <div id="one">some Contents</div>
+            
+        </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".one").html('Clb Web');
+        })
+
+        $(document).ready(function () {
+            $("#one").html('Clb Web');
+        })
+
+        
+    </script>
+</body>
+
+</html>

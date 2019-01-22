@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    li:nth-child(3) {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>This is the Header</h1>
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </ul>
+
+</body>
+<script>
+  $(document).ready(function () {
+    $("li:eq(2)").click(function (event) {
+      console.log($(this));
+    })
+
+    $("h1").on("click",function(event){
+      $("h1").html("The header changed");
+    })
+  })
+</script>
+
+</html>
